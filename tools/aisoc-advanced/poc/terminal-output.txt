@@ -1,0 +1,15 @@
+SYNTHETIC DEMO DATA — not production telemetry
+Scenario: five failed logins followed by a successful login for one account.
+
+AiSOC Advanced · Offline Investigation
+Events: 6 · Findings: 1 · Window: 15.0 min
+Input SHA-256: 44d77dfec5ca8073bb9593ccae380de4f03c88fb7fb15df8dad00127810c0b26
+Evidence chain: 1 entries · 621a53d574dbfeb9143de75d25b1f08f36b64c1af0d61c6a191ba95565a6cca1 · signed: no
+
+[HIGH] AUTH_BRUTE_FORCE_SUCCESS — Repeated authentication failures followed by success
+  Evidence lines: 1, 2, 3, 4, 5, 6 | ATT&CK: T1110, T1078
+  Details: {"actor": "alex@example.test", "failure_count": 5, "window_seconds": 900}
+
+Offline correlation only. Shared identifiers and event sequences are evidence for review, not a verdict or proof of malicious activity.
+Evidence ledger: VALID
+Negative control: changed report rejected (exit code 1).
