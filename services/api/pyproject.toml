@@ -126,7 +126,7 @@ croniter = ">=2.0,<7.0"
 # resolve the same client: a consumer-group protocol difference between them
 # would surface as a rebalance nobody could explain. Only used by
 # `app.workers.retro_hunt_consumer`, which is off by default.
-aiokafka = ">=0.10,<0.15"
+aiokafka = ">=0.10,<0.16"
 # The SAML routes import `onelogin.saml2`, and this was declared in no
 # install path at all. `app/auth/saml.py` caught the resulting ImportError
 # and issued a signed session for a principal called `stub-saml-user` that
